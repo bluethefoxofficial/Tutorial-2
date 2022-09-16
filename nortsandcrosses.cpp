@@ -134,11 +134,6 @@ void game() {
 		}
 	}
 
-
-
-
-
-	
 		playerturn();
 
 	
