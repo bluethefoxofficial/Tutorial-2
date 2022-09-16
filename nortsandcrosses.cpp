@@ -26,7 +26,7 @@ string playertwoname = "";
 char grid[3][3] = { '1','2','3','4','5','6','7','8','9' };
 int norts() {
 	//introduction and asking the first players name
-	cout << "XOXOXOXOXOXO hello welcome to the game XOXOXOXOXOXOX\nPlayer one what is your name?\n>";
+	cout << "=========== hello welcome to tic X tac 0 toe ============\nPlayer one what is your name?\n>";
 	Beep(600, 200);
 	cin >> playeronename;
 	Clear();
