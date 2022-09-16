@@ -71,6 +71,23 @@ void game() {
 	cin >> row;
 		cout << "\n" << currentplayer << " pick a space column>";
 	cin >> column;
+
+	if (stoi(row) > 3) {
+		cout << "\n You cant go beyond 3 try again";
+		game();
+	}
+	if (stoi(row) < 1) {
+		cout << "\n You cant go under 1 try again";
+		game();
+	}
+	if (stoi(column) > 3) {
+		cout << "\n You cant go beyond 3 try again";
+		game();
+	}
+	if (stoi(column) < 1) {
+		cout << "\n You cant go under 1 try again";
+		game();
+	}
 	//check if the space is taken
 	if (grid[stoi(row) - 1][stoi(column) - 1] == P1 || grid[stoi(row) - 1][stoi(column) - 1] == P2) {
 
@@ -140,9 +157,6 @@ void printgrid(){
 	cout << "<2> :" << grid[1][0] << "|" << grid[1][1] << "|" << grid[1][2] << endl;
 	cout << "<3> :" << grid[2][0] << "|" << grid[2][1] << "|" << grid[2][2] << endl;
 	cout << "     " << "=" << "=" << "=" << "=" << "=" << "\n";
-
-
-	
 }
 
 bool checkwin() {
